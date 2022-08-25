@@ -1,0 +1,28 @@
+{
+  "name": "mocksynormalizacion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js",
+    "dev:normalize": "cd src/normalizacion && node normalize.js && cd ../..",
+    "build:database": "node ./src/scripts/build_database.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^7.6.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "faker": "^5.5.3",
+    "knex": "^2.2.0",
+    "mysql2": "^2.3.3",
+    "normalizr": "^3.6.2",
+    "socket.io": "^4.5.1",
+    "sqlite3": "^5.0.9"
+  },
+  "devDependencies": {},
+  "description": ""
+}
